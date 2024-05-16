@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <title>Loan calculator</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    
+    <h1>Calculadora de Propinas</h1>
+    <form id="tipCalculatorForm">
+        <label for="totalCost">Costo Total:</label>
+        <input type="number" id="totalCost" name="totalCost" required>
+        <br><br>
+        <label for="serviceLevel">Nivel de Servicio:</label>
+        <select id="serviceLevel" name="serviceLevel">
+            <option value="regular">Regular</option>
+            <option value="excellent">Excelente</option>
+        </select>
+        <br><br>
+        <button type="submit">Calcular Propina</button>
+    </form>
+    <p id="result"></p>
 </body>
+<script src="./app.js"></script>
 </html>
